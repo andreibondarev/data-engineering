@@ -3,6 +3,7 @@
 - Rails 3.2.7
 - Ruby 1.9.3
 - MySQL
+
 # Setup
 1. Run 'gem install bundler'
 2. Run 'bundle install'
