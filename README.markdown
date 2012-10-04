@@ -1,3 +1,16 @@
+# Instructions
+# Requirements
+- Rails 3.2.7
+- Ruby 1.9.3
+- MySQL
+# Setup
+1. Run 'gem install bundler'
+2. Run 'bundle install'
+3. Configure the public/database.yml file
+4. Run 'rake db:drop db:create db:migrate' to setup the database
+5. Run 'rails s' to start the server
+5. Open up 'localhost:3000' in a web browser
+
 # Challenge for Software Engineer - Big Data 
 To better assess a candidates development skills, we would like to provide the following challenge.  You have as much time as you'd like (though we ask that you not spend more than a few hours).
 
