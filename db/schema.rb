@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121003032530) do
+ActiveRecord::Schema.define(:version => 20121003022205) do
 
   create_table "customers", :force => true do |t|
     t.string   "first_name"
@@ -21,7 +21,6 @@ ActiveRecord::Schema.define(:version => 20121003032530) do
   end
 
   create_table "items", :force => true do |t|
-    t.string   "name"
     t.string   "description"
     t.integer  "price"
     t.datetime "created_at",  :null => false
@@ -42,15 +41,6 @@ ActiveRecord::Schema.define(:version => 20121003032530) do
     t.integer  "quantity"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
-  end
-
-  create_table "uploads", :force => true do |t|
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
-    t.string   "file_file_name"
-    t.string   "file_content_type"
-    t.integer  "file_file_size"
-    t.datetime "file_updated_at"
   end
 
 end

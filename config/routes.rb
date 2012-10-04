@@ -1,5 +1,4 @@
 DataEngineering::Application.routes.draw do
-  resources :uploads
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -49,7 +48,13 @@ DataEngineering::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'uploads#new'
+
+  resources :uploads do
+    member do
+      post 'create'
+    end
+  end
 
   # See how all your routes lay out with "rake routes"
 

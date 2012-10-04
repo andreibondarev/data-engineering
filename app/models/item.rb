@@ -1,17 +1,11 @@
 class Item < ActiveRecord::Base
 	has_many :transaction_lines
 
-	attr_accessible :name, :description, :price
-
-	validates :name,
-		:presence => true,
-		:length => { :maximum => 250 },
-		:allow_blank => true
+	attr_accessible :description, :price
 
 	validates :description,
 		:presence => true,
-		:length => { :maximum => 250 },
-		:allow_blank => true		
+		:length => { :maximum => 250 }
 
 	validates :price,
 		:presence => true,
