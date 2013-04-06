@@ -7,7 +7,7 @@
 # Setup
 1. Run 'gem install bundler'
 2. Run 'bundle install'
-3. Configure the public/database.yml file
+3. Configure the config/database.yml file
 4. Run 'rake db:drop db:create db:migrate' to setup the database
 5. Run 'rails s' to start the server
 5. Open up 'localhost:3000' in a web browser
