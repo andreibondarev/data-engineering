@@ -1,4 +1,3 @@
-# Instructions
 # Requirements
 - Rails 3.2.7
 - Ruby 1.9.3
